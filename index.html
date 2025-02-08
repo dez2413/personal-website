@@ -4,24 +4,114 @@
         <meta charset="UTF-8">
         <meta name="viewport" 
           content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <title>Personal Website</title>
     </head>
     <body>
         <header>
-            <h1>Welcome to My Website</h1>
+            <h1> Welcome to My Website</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <a class="nav" href="index.html">Home</a>
+                    <a class="nav" href="projects.html">Projects</a>
+                    <a class="nav" href="hobbies.html">Hobbies</a>
+                    <a class="nav" href="contact.html">Contact</a>
                 </ul>
             </nav>
+            <style>
+                body:not(.header) { 
+                    font-family: Arial, sans-serif; 
+                    text-align: center; 
+                    margin: 0; 
+                    padding: 0;
+                }
+
+                /* Navigation Bar Styling */
+                nav {
+                    width: 100%;  /* Makes it stretch full width */
+                    background: #333; /* Dark background */
+                    display: flex;
+                    justify-content: right; 
+                    padding: 15px 0;
+                    position: fixed; /* Keeps navbar at the top */
+                    top: 0;
+                    left: 0;
+                    z-index: 1000; /* Ensures it's above other content */
+                }
+
+                nav ul {
+                    display: flex;
+                    gap: 30px; /* Space between menu items */
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                nav ul li {
+                    display: inline-block;
+                }
+
+                .nav {
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    color: white;
+                    font-weight: bold;
+                    background: transparent;
+                    border-radius: 5px;
+                    transition: background 0.3s;
+                }
+
+                .nav:hover {
+                    background: #007BFF; /* Highlight effect */
+                }
+
+                /* Push content down to avoid overlap with fixed navbar */
+                h1 {
+                    padding-top: 80px;
+                }
+
+                .tab-container:not(.nav) { 
+                    display: flex; 
+                    justify-content: 
+                    center; margin: 20px; 
+                }
+
+                .tab { 
+                    padding: 10px 20px; 
+                    cursor: pointer; 
+                    background: lightgray; 
+                    border: 1px solid #ddd; 
+                }
+
+                .tab.active { 
+                    background: #007BFF; 
+                    color: white; 
+                }
+
+                .tab-content { 
+                    display: none; 
+                    padding: 20px; 
+                    border: 1px solid #ddd; 
+                    margin-top: 10px; 
+                }
+
+                .tab-content.active { 
+                    display: block; 
+                }
+            </style>
         </header>
         <main>
             <section>
                 <img src="profile.jpg" alt="My Picture">
-                <p>Short bio about myself...</p>
+                <h2>Short bio about me </h2>
+                <p>
+                Hello, my name is Desiree. Here are a few things about me: I’m currently a senior majoring in both Computer Science and Criminal Justice.
+                Next semester, I will be graduating from college and looking for job opportunities in the workforce. Right now, I’m trying to expand my 
+                knowledge of web development for fun and practice. As a Computer Science major, I sometimes feel that my skills are a bit lacking because
+                I rushed through this degree. Originally, I planned to pursue Chemistry and Forensics. I spent about a year and a half conducting research,
+                only to realize that I disliked it. However, I had some interest in Computer Science, so I decided to give it a try during the spring semester of my 
+                sophomore year. I ended up really enjoying it, so I chose to pursue a degree in the field while I had the opportunity. I will be graduating in the Fall of 2025, 
+                and my goal is to enter the field of cyber forensics. Hopefully, I can build a career in that area and continue developing my skills.
+                </p>
             </section>
         </main>
         <footer>
