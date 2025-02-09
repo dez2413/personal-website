@@ -4,11 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" 
           content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+          <title>Personal Website</title>
+          <link rel="stylesheet" href="styles.css"> <!-- Link to External CSS -->
     </head>
     <body>
-        <header>
-            <h1>Hobbies</h1>
+        <header class="header-nav">
+            <div class="logo">
+                <h1>Hobbies</h1>
+            </div>
             <nav>
                 <ul>
                     <a class="nav" href="index.html">Home</a>
@@ -17,53 +20,8 @@
                     <a class="nav" href="contact.html">Contact</a>
                 </ul>
             </nav>
-            <style>
-                /* Basic styling */
-                body {
-                    font-family: Arial, sans-serif;
-                    text-align: center;
-                }
-
-                /* Hide radio buttons */
-                input[type="radio"] {
-                    display: none;
-                }
-
-                /* Tab labels (buttons) */
-                .tabs label {
-                    display: inline-block;
-                    padding: 10px 20px;
-                    background: #ddd;
-                    cursor: pointer;
-                    border-radius: 5px 5px 0 0;
-                    margin-right: 5px;
-                    transition: background 0.3s;
-                }
-
-                /* Active tab label */
-                input[type="radio"]:checked + label {
-                    background: #555;
-                    color: white;
-                }
-
-                /* Tab content area */
-                .tab-content {
-                    display: none;
-                    padding: 20px;
-                    border: 1px solid #ddd;
-                    border-radius: 0 5px 5px 5px;
-                    background: #f9f9f9;
-                }
-
-                /* Show selected tab content */
-                #tab1:checked ~ #content1,
-                #tab2:checked ~ #content2,
-                #tab3:checked ~ #content3, 
-                #tab4:checked ~ #content4 {
-                    display: block;
-                }
-            </style>
         </header>
+    </body>  
         <main>
             <h2>My Hobbies</h2>
                 <p>
@@ -72,20 +30,20 @@
                  I’ve developed a habit of frequently switching interests, but the hobbies I’ve consistently 
                  stuck with are watching anime, exercising, and, more recently, playing card games.
                 </p>
-                <div class="tabs">
-                    <input type="radio" id="tab1" name="tabs" checked>
+                <div class="mainTabs">
+                    <input type="radio" id="tab1" name="mainTabs" checked>
                     <label for="tab1">Art</label>
             
-                    <input type="radio" id="tab2" name="tabs">
+                    <input type="radio" id="tab2" name="mainTabs">
                     <label for="tab2">Anime & Video Games</label>
             
-                    <input type="radio" id="tab3" name="tabs">
+                    <input type="radio" id="tab3" name="mainTabs">
                     <label for="tab3">Card Games</label>
 
-                    <input type="radio" id="tab4" name="tabs">
+                    <input type="radio" id="tab4" name="mainTabs">
                     <label for="tab4">Fitness</label>
             
-                    <div class="tab-content" id="content1">
+                    <div class="mainTabs-content" id="content1">
                         <h2>Art & Drawing</h2>
                         <h3> Beginning of learning of Art</h3>
                         <p>
@@ -110,7 +68,7 @@
                         </p>
                     </div>
             
-                    <div class="tab-content" id="content2">
+                    <div class="mainTabs-content" id="content2">
                         <h2>Anime & Video Games</h2>
                         <h3>Anime</h3>
                         <p>
@@ -131,7 +89,7 @@
                         </p>
                     </div>
             
-                    <div class="tab-content" id="content3">
+                    <div class="mainTabs-content" id="content3">
                         <h2>Card Games</h2>
                         <p>
                             Card games have become one of my biggest hobbies. It all started when a friend 
@@ -146,7 +104,7 @@
                             especially getting to travel with friends and the community I had built around the game.
                         </p>
                     </div>
-                    <div class="tab-content" id="content4">
+                    <div class="mainTabs-content" id="content4">
                         <h2>My Fitness & Sport</h2>
                         <p>
                             My love for fitness began in high school. I was involved in basketball 
