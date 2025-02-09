@@ -8,10 +8,9 @@
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background: url(calm-background.jpg);
-    background-color: ;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url(istockphoto-1459373176-612x612.jpg);
+    
+    background-size: cover;
     color: rgb(0, 0, 0);
 }
 
