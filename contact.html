@@ -14,13 +14,21 @@
                 </div>
                 <nav>
                     <ul>
-                        <a class="nav" href="index.html">Home</a>
-                        <a class="nav" href="Art.html">Art</a>
-                        <a class="nav" href="Anime&Video.html">Anime/Games</a>
-                        <a class="nav" href="Cards.html">TCG</a>
-                        <a class="nav" href="Fitness.html">Fitness</a>
-                        <a class="nav" href="contact.html">Contact</a>
+                        <div class="group1">
+                            <li><a class="nav" href="index.html">Home</a></li>
+                            <li><a class="nav" href="Art.html">Art</a></li>
+                            <li><a class="nav" href="Anime&Video.html">Anime/Games</a></li>
+                        </div>
+                        <div class="group2">
+                            <li><a class="nav" href="Cards.html">TCG</a></li>
+                            <li><a class="nav" href="Fitness.html">Fitness</a></li>
+                            <li><a class="nav" href="contact.html">Contact</a></li>
+                        </div> 
                     </ul>
+                    
+                    <div class = "darkMode">
+                        <button onclick="myFunction()">Toggle dark mode</button>
+                    </div>
                 </nav>
             </header>
         </body>  
@@ -30,15 +38,25 @@
                 dez2413@nmsu.edu. There is also my <a href="https://www.instagram.com/desiree_m_gut/"> Instragram</a> and 
                 <a href="https://www.linkedin.com/in/desiree-gutierrez-0a97592b6/"> Linkedin Account</a>
                 that you can access. Then you the bottom will be my resume. 
+                <a href="Resume.pdf" download>Download Resume</a>
+
             </p>
 
         </main>
         <footer>
-           
+            <p>&copy; 2025 Desiree Gutierrez</p>
         </footer>
         <script>
-            document.getElementById("theme-toggle").onclick = function() {
-                document.body.classList.toggle("dark");
-            };
+              function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+                localStorage.setItem("darkMode", element.classList.contains("dark-mode"));
+            }
+
+            window.onload = function () {
+                if (localStorage.getItem("darkMode") === "true") {
+                    document.body.classList.add("dark-mode");
+                }
+            }
         </script>
 </html>

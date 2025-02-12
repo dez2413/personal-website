@@ -13,13 +13,21 @@
             </div>
             <nav>
                 <ul>
-                    <a class="nav" href="index.html">Home</a>
-                    <a class="nav" href="Art.html">Art</a>
-                    <a class="nav" href="Anime&Video.html">Anime/Games</a>
-                    <a class="nav" href="Cards.html">TCG</a>
-                    <a class="nav" href="Fitness.html">Fitness</a>
-                    <a class="nav" href="contact.html">Contact</a>
+                    <div class="group1">
+                        <li><a class="nav" href="index.html">Home</a></li>
+                        <li><a class="nav" href="Art.html">Art</a></li>
+                        <li><a class="nav" href="Anime&Video.html">Anime/Games</a></li>
+                    </div>
+                    <div class="group2">
+                        <li><a class="nav" href="Cards.html">TCG</a></li>
+                        <li><a class="nav" href="Fitness.html">Fitness</a></li>
+                        <li><a class="nav" href="contact.html">Contact</a></li>
+                    </div> 
                 </ul>
+                
+                <div class = "darkMode">
+                    <button onclick="myFunction()">Toggle dark mode</button>
+                </div>
             </nav>
         </header>
     </body>  
@@ -44,8 +52,16 @@
             <p>&copy; 2025 Desiree Gutierrez</p>
         </footer>
         <script>
-            document.getElementById("theme-toggle").onclick = function() {
-                document.body.classList.toggle("dark");
-            };
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+                localStorage.setItem("darkMode", element.classList.contains("dark-mode"));
+            }
+
+            window.onload = function () {
+                if (localStorage.getItem("darkMode") === "true") {
+                    document.body.classList.add("dark-mode");
+                }
+            }
         </script>
 </html>

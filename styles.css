@@ -13,6 +13,33 @@ body{
     color: rgb(0, 0, 0);
 }
 
+.darkMode{
+    display: block;
+    text-align: right;
+}
+.dark-mode {
+    background: black;
+    background-color: black;
+    color: white;
+  }
+.dark-mode .header-nav{
+    background-color: rgba(27, 27, 27, 0.796);
+    color: rgb(255, 255, 255);
+}
+.dark-mode .nav{
+    color: rgb(255, 255, 255);
+    background-color: #292828;
+}
+
+.dark-mode main{
+    background: #3c3c3c8c;
+}
+
+.dark-mode footer{
+    color: rgb(254, 252, 252);
+    background: #3c3c3c8c;
+}
+
 /* Header and Nav Combined */
 .header-nav {
     display: flex;
@@ -35,8 +62,37 @@ body{
 /* Navigation Styles */
 nav ul {
     list-style: none;
+    display: block;
+    align-items: right;
+}
+.group1{
     display: flex;
-    gap: 5px;
+    padding: 10px 20px;
+    gap: 10px;
+}
+.group2{
+    display: flex;
+    padding: 10px 20px;
+     gap: 10px;
+}
+
+@media (max-width: 720px) {
+    nav ul {
+        display: block;
+        align-items: right;
+        gap: 0px;
+    }
+    .group1{
+        display: flex;
+        padding: 10px 20px;
+        gap: 0px;
+    }
+    .group2{
+        display: flex;
+        padding: 10px 20px;
+        gap: 0px;
+    }
+   
 }
 
 .nav {
