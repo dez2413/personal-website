@@ -2,37 +2,39 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-          <title>Personal Website</title>
-          <link rel="stylesheet" href="styles.css">
-        </head>
-        <body>
-            <header class="header-nav">
-                <div class="logo">
-                    <h1>Contacts</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <div class="group1">
-                            <li><a class="nav" href="index.html">Home</a></li>
-                            <li><a class="nav" href="Art.html">Art</a></li>
-                            <li><a class="nav" href="Anime&Video.html">Anime/Games</a></li>
-                        </div>
-                        <div class="group2">
-                            <li><a class="nav" href="Cards.html">TCG</a></li>
-                            <li><a class="nav" href="Fitness.html">Fitness</a></li>
-                            <li><a class="nav" href="contact.html">Contact</a></li>
-                        </div> 
-                    </ul>
-                    
-                    <div class = "darkMode">
-                        <button onclick="myFunction()">Toggle dark mode</button>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Website</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Link to External CSS -->
+    </head>
+    <body>
+        <header class="header-nav">
+            <!-- Logo and Navigation Links -->
+            <div class="logo">
+                <h1> Contact</h1>
+            </div>
+            <nav>
+                <ul>
+                    <!-- Navigation Links -->
+                    <div class="group1">
+                        <li><a class="nav" href="index.html">Home</a></li>
+                        <li><a class="nav" href="Art.html">Art</a></li>
+                        <li><a class="nav" href="Anime&Video.html">Anime/Games</a></li>
                     </div>
-                </nav>
-            </header>
-        </body>  
+                    <div class="group2">
+                        <li><a class="nav" href="Cards.html">TCG</a></li>
+                        <li><a class="nav" href="Fitness.html">Fitness</a></li>
+                        <li><a class="nav" href="contact.html">Contact</a></li>
+                    </div> 
+                </ul>
+                <!-- Dark Mode Toggle Button -->
+                <div class = "darkMode">
+                    <button onclick="myFunction()">Toggle dark mode</button>
+                </div>
+            </nav>
+        </header>
+    </body>  
         <main>
+            <!-- Main Content  & Subheader-->
             <p>
                 If you want to contract me you will be able to with my email 
                 dez2413@nmsu.edu. There is also my <a href="https://www.instagram.com/desiree_m_gut/"> Instragram</a> and 
@@ -47,6 +49,7 @@
             <p>&copy; 2025 Desiree Gutierrez</p>
         </footer>
         <script>
+            // Dark Mode Toggle Function
               function myFunction() {
                 var element = document.body;
                 element.classList.toggle("dark-mode");

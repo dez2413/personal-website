@@ -13,10 +13,13 @@ body{
     color: rgb(0, 0, 0);
 }
 
+/* Dark Mode Toggle */
 .darkMode{
     display: block;
     text-align: right;
 }
+
+/* Dark Mode Styles */
 .dark-mode {
     background: black;
     background-color: black;
@@ -76,6 +79,7 @@ nav ul {
      gap: 10px;
 }
 
+/* Responsive Design */
 @media (max-width: 720px) {
     nav ul {
         display: block;
@@ -95,6 +99,7 @@ nav ul {
    
 }
 
+/* Navigation Links */
 .nav {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -104,6 +109,7 @@ nav ul {
     transition: background-color 0.3s ease;
 }
 
+/* Navigation Links Hover Effect */
 .nav:hover {
     background-color: #007BFF;
 }
@@ -126,6 +132,7 @@ footer {
     color: rgb(0, 0, 0);
 }
 
+/*Bio Picture*/
 .selfie {
     width: 15%;
     height: 15%;
@@ -133,6 +140,7 @@ footer {
     border: 5px solid #ffffff;
 }
 
+/*Image Design*/
 .art{ 
     display: block;
     align-items: center;

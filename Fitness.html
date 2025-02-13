@@ -4,15 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Website</title>
-        <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" href="styles.css"> <!-- Link to External CSS -->
     </head>
     <body>
         <header class="header-nav">
+            <!-- Logo and Navigation Links -->
             <div class="logo">
                 <h1> Fitness</h1>
             </div>
             <nav>
                 <ul>
+                    <!-- Navigation Links -->
                     <div class="group1">
                         <li><a class="nav" href="index.html">Home</a></li>
                         <li><a class="nav" href="Art.html">Art</a></li>
@@ -24,14 +26,15 @@
                         <li><a class="nav" href="contact.html">Contact</a></li>
                     </div> 
                 </ul>
-                
+                <!-- Dark Mode Toggle Button -->
                 <div class = "darkMode">
                     <button onclick="myFunction()">Toggle dark mode</button>
                 </div>
             </nav>
         </header>
     </body>  
-    <main>
+        <main>
+            <!-- Main Content  & Subheader-->
         <h2>My Fitness & Sport</h2>
         <div class="art">
         <p>
@@ -73,6 +76,7 @@
         <p>&copy; 2025 Desiree Gutierrez</p>
     </footer>
     <script>
+        // Dark Mode Toggle Function
         function myFunction() {
                 var element = document.body;
                 element.classList.toggle("dark-mode");
